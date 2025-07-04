@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+.click-top-shift > * {
+    position: relative;
+}
+.click-top-shift:active > * {
+    top: 1px;
+}

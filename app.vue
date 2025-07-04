@@ -42,7 +42,7 @@
         </ClientOnly>
         <div class="flex justify-center mx-auto max-w-[85%] mt-6 gap-x-4">
           <a
-            class="inline-flex"
+            class="inline-flex click-top-shift"
             href="https://t.me/oleegarch"
             target="_blank"
             rel="noopener"
@@ -54,7 +54,7 @@
             />
           </a>
           <a
-            class="inline-flex"
+            class="inline-flex click-top-shift"
             href="https://www.instagram.com/oleegarch"
             target="_blank"
             rel="noopener"
@@ -66,7 +66,7 @@
             />
           </a>
           <a
-            class="inline-flex"
+            class="inline-flex click-top-shift"
             href="https://github.com/oleegarch"
             target="_blank"
             rel="noopener"
@@ -86,7 +86,7 @@
         <div class="flex items-stretch">
             <NuxtLink
               to="/"
-              class="font-bold text-4xl py-2 px-6 rounded-md cursor-pointer"
+              class="click-top-shift font-bold text-4xl py-2 px-6 rounded-md cursor-pointer"
               :class="{ 'bg-white/12': $route.name === 'index' }"
             >
                 <span>Обо мне</span>
@@ -94,7 +94,7 @@
             <LineSeparator vertical class="mx-4"/>
             <NuxtLink
               to="/portfolio"
-              class="font-bold text-4xl py-2 px-6 rounded-md cursor-pointer"
+              class="click-top-shift font-bold text-4xl py-2 px-6 rounded-md cursor-pointer"
               :class="{ 'bg-white/12': $route.name === 'portfolio' }"
             >
                 <span>Портфолио</span>

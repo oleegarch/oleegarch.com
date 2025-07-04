@@ -36,7 +36,7 @@ function copy(label : string) {
                 <span>{{ title }}</span>
             </div>
             <div
-                class="truncate cursor-pointer select-none"
+                class="truncate click-top-shift cursor-pointer select-none"
                 :class="{ 'text-green-400': wasCopiedNow }"
                 @click="copy(label)"
             >
