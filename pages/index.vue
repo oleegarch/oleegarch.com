@@ -193,7 +193,7 @@ const skillsChunks = chunk(skills, 2)
         <div
             v-for="skill in skillsChunk"
             :key="skill.title"
-            class="AboutPage--skill bg-white/12 rounded-xl flex-1 transition-flex duration-200 shrink-0 p-4"
+            class="bg-white/12 rounded-xl flex-1 transition-flex duration-200 shrink-0 p-4"
         >
             <div class="mb-2">
                 <ProgressBar
@@ -204,9 +204,9 @@ const skillsChunks = chunk(skills, 2)
             <div
                 v-for="moduleSkill in skill.modules"
                 :key="moduleSkill.title"
-                class="AboutPage--skill-module flex items-center"
+                class="flex items-center"
             >
-                <div class="AboutPage--skill-module-title text-xs truncate w-[50%] text-gray-300">
+                <div class="text-xs truncate w-[50%] text-gray-300">
                     <span>{{ moduleSkill.title }}</span>
                 </div>
                 <ProgressBar
