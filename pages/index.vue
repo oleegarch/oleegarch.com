@@ -173,10 +173,6 @@ const skillsChunks = chunk(skills, 2)
 </script>
 
 <template>
-    <div class="font-bold text-4xl">
-        <span>Обо мне</span>
-    </div>
-    <div class="bg-yellow-500 rounded-md h-2 w-12 mt-4"/>
     <div class="mt-8">
         <span>За последние 6 лет я работал над собственными мини-проектами (VK/Telegram мини-аппы/боты), которые использовались пользователями и приносили доход. Я занимался всем: от идеи до деплоя, включая клиент, сервер, поддержку, развитие и монетизацию.</span>
     </div>

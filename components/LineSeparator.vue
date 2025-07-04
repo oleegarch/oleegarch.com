@@ -1,3 +1,18 @@
+<script setup lang="ts">
+defineProps<{
+    vertical?: boolean
+}>()
+</script>
+
 <template>
-    <div class="h-[1px] mx-auto max-w-[85%] bg-white/20"/>
+    <div
+        :class="[
+            'bg-white/20',
+            (
+                vertical
+                    ? 'w-px self-stretch'
+                    : 'h-px max-w-[85%] mx-auto'
+            )
+        ]"
+    />
 </template>

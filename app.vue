@@ -83,6 +83,24 @@
         </div>
       </GlassContainer>
       <GlassContainer class="flex-shrink-0 max-w-[75%] p-8">
+        <div class="flex items-stretch">
+            <NuxtLink
+              to="/"
+              class="font-bold text-4xl py-2 px-6 rounded-md cursor-pointer"
+              :class="{ 'bg-white/12': $route.name === 'index' }"
+            >
+                <span>Обо мне</span>
+            </NuxtLink>
+            <LineSeparator vertical class="mx-4"/>
+            <NuxtLink
+              to="/portfolio"
+              class="font-bold text-4xl py-2 px-6 rounded-md cursor-pointer"
+              :class="{ 'bg-white/12': $route.name === 'portfolio' }"
+            >
+                <span>Портфолио</span>
+            </NuxtLink>
+        </div>
+        <div class="bg-yellow-500 rounded-md h-2 w-12 mt-4"/>
         <NuxtPage />
       </GlassContainer>
     </main>
