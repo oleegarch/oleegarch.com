@@ -303,7 +303,7 @@ const options = {
       },
       "limit": {
         "mode": "delete",
-        "value": 0
+        "value": 500
       },
       "value": 100
     },
