@@ -82,7 +82,7 @@
           <span>* телеграм в приоритете</span>
         </div>
       </GlassContainer>
-      <GlassContainer class="flex-shrink-0 max-w-[75%] p-8">
+      <GlassContainer class="flex-shrink-0 w-[75%] max-w-[75%] p-8">
         <div class="flex items-stretch">
             <NuxtLink
               to="/"

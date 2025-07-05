@@ -12,7 +12,8 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxt/icon',
     '@nuxt/image',
-    'nuxt-particles'
+    'nuxt-particles',
+    'nuxt-swiper'
   ],
   
   vite: {

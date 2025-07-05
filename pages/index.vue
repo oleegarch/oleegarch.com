@@ -179,7 +179,9 @@ const skillsChunks = chunk(skills, 2)
     <div class="mt-4">
         <span>Я всё время развивался сам: писал, читал, пробовал. Сейчас хочу прокачаться в командной разработке — и уверен, что быстро адаптируюсь. Я не боюсь фидбэка, и мне интересно расти дальше, перенимая лучшие практики.</span>
     </div>
-    <div class="font-bold text-4xl mt-12">Стек</div>
+    <div class="font-bold text-3xl mt-12">
+        <span>Стек</span>
+    </div>
     <div class="bg-yellow-500 rounded-md h-2 w-12 mt-4"/>
     <div
         v-for="(skillsChunk, index) in skillsChunks"
