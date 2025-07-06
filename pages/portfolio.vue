@@ -8,14 +8,26 @@ import { portfolioItems } from '@/data/portfolio'
         :key="item.name"
         class="bg-white/8 flex rounded-2xl overflow-hidden mt-8"
     >
-        <div class="w-50 h-88 pr-8">
+        <div class="w-60 h-80 pr-8">
             <PortfolioPreviewImagesSlider
                 :images="item.images"
             />
         </div>
         <div class="flex-1 min-w-0 py-8">
-            <div class="font-extrabold text-2xl">
+            <div class="flex items-center font-extrabold text-2xl">
                 <span>{{ item.title }}</span>
+                <a
+                    v-if="item.link != null"
+                    :href="item.link"
+                    target="_blank"
+                    rel="noopener"
+                    class="inline-flex click-top-shift ml-2"
+                >
+                    <Icon
+                        name="mdi:web"
+                        size="24"
+                    />
+                </a>
             </div>
             <div class="mt-2">
                 <span>{{ item.description }}</span>
@@ -25,16 +37,16 @@ import { portfolioItems } from '@/data/portfolio'
             </div>
             <PortfolioStackSlider
                 v-if="item.stack.front != null"
-                title="frontend:"
+                title="Frontend:"
                 :stackItems="item.stack.front"
             />
             <PortfolioStackSlider
                 v-if="item.stack.back != null"
-                title="backend:"
+                title="Backend:"
                 :stackItems="item.stack.back"
             />
             <div class="flex items-center mt-6">
-                <div class="mr-4">
+                <div class="font-bold mr-4">
                     <span>Доступно в:</span>
                 </div>
                 <div class="flex gap-x-2">

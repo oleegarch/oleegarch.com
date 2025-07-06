@@ -14,6 +14,7 @@ export type Link = {
 }
 export type PortfolioItem = {
     name: string
+	link?: string
     title: string
     description: string
     images: string[]
@@ -202,6 +203,7 @@ export const portfolioItems: PortfolioItem[] = [
     },
     {
         name: 'puzzlewords',
+		link: 'https://oleegarch.com/puzzlewords/',
         title: 'Пазлы Слов — Кроссворды',
 		description:
 			'Кроссворды. По 10 000+ уровней на английском и русском. Все кроссворды сгенерированы с помощью ChatGPT.',
