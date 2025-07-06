@@ -25,7 +25,7 @@ const skillsChunks = chunk(skills, 2)
             class="bg-white/12 rounded-xl flex-1 transition-flex duration-200 shrink-0 p-4"
         >
             <div class="mb-2">
-                <ProgressBar
+                <UiProgressBar
                     :value="skill.value"
                     :title="skill.title"
                 />
@@ -38,7 +38,7 @@ const skillsChunks = chunk(skills, 2)
                 <div class="text-xs truncate w-[50%] text-gray-300">
                     <span>{{ moduleSkill.title }}</span>
                 </div>
-                <ProgressBar
+                <UiProgressBar
                     :value="moduleSkill.value"
                     class="flex-1"
                 />

@@ -9,7 +9,7 @@ import { portfolioItems } from '@/data/portfolio'
         class="bg-white/8 flex rounded-2xl overflow-hidden mt-8"
     >
         <div class="w-60 h-80 pr-8">
-            <PortfolioPreviewImagesSlider
+            <SliderPreviewImages
                 :images="item.images"
             />
         </div>
@@ -35,12 +35,12 @@ import { portfolioItems } from '@/data/portfolio'
             <div class="font-bold text-lg mt-6">
                 <span>Стек:</span>
             </div>
-            <PortfolioStackSlider
+            <SliderPortfolioStack
                 v-if="item.stack.front != null"
                 title="Frontend:"
                 :stackItems="item.stack.front"
             />
-            <PortfolioStackSlider
+            <SliderPortfolioStack
                 v-if="item.stack.back != null"
                 title="Backend:"
                 :stackItems="item.stack.back"

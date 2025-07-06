@@ -15,6 +15,17 @@ export default defineNuxtConfig({
     'nuxt-particles',
     'nuxt-swiper'
   ],
+
+  components: [
+    {
+      path: '@/components/particles',
+      pathPrefix: false
+    },
+    {
+      path: '@/components',
+      pathPrefix: true
+    }
+  ],
   
   vite: {
     plugins: [
