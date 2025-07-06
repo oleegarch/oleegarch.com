@@ -218,36 +218,31 @@ const portfolioItems = [
         :key="item.name"
         class="bg-white/8 flex rounded-2xl overflow-hidden mt-8"
     >
-        <div class="pr-8">
-            <ClientOnly>
-                <swiper-container
-                    class="swiper-portfolio w-50 h-88"
-                    :navigation="true"
-                    :pagination="{ dynamicBullets: true }"
-                >
-                    <swiper-slide
-                        v-for="(image, i) in item.images"
-                        :key="i"
-                    >
-                        <div
-                            :style="{ 'backgroundImage': `url(${image})` }"
-                            class="size-full bg-cover bg-no-repeat bg-center"
-                            alt="Фото Проекта"
-                        />
-                    </swiper-slide>
-                </swiper-container>
-            </ClientOnly>
+        <div class="w-50 h-88 pr-8">
+            <PortfolioPreviewImagesSlider
+                :images="item.images"
+            />
         </div>
-        <div class="py-8">
+        <div class="flex-1 min-w-0 py-8">
             <div class="font-extrabold text-2xl">
                 <span>{{ item.title }}</span>
             </div>
             <div class="mt-2">
                 <span>{{ item.description }}</span>
             </div>
-            <div class="font-bold mt-6">
+            <div class="font-bold text-lg mt-6">
                 <span>Стек:</span>
             </div>
+            <PortfolioStackSlider
+                v-if="item.stack.front != null"
+                title="frontend:"
+                :stackItems="item.stack.front"
+            />
+            <PortfolioStackSlider
+                v-if="item.stack.back != null"
+                title="backend:"
+                :stackItems="item.stack.back"
+            />
         </div>
     </div>
 </template>
