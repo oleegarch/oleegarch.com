@@ -29,7 +29,11 @@ function copy(label : string) {
 <template>
     <div class="flex items-center mx-auto max-w-[85%]">
         <div class="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 bg-white/12 rounded-xl">
-            <Icon :name="icon" size="24" class="block" />
+            <Icon
+                :name="icon"
+                size="24"
+                class="block"
+            />
         </div>
         <div class="ml-4 min-w-0">
             <div class="truncate select-none text-sm text-gray-400">
