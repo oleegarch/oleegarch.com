@@ -50,7 +50,7 @@
             <Icon
               name="uil:telegram"
               size="36"
-              class="text-gray-200 hover:text-white cursor-pointer"
+              class="text-gray-200 hover:text-white"
             />
           </a>
           <a
@@ -60,9 +60,9 @@
             rel="noopener"
           >
             <Icon
-              name="uil:instagram"
+              name="uil:instagram-alt"
               size="36"
-              class="text-gray-200 hover:text-white cursor-pointer"
+              class="text-gray-200 hover:text-white"
             />
           </a>
           <a
@@ -74,7 +74,7 @@
             <Icon
               name="uil:github"
               size="36"
-              class="text-gray-200 hover:text-white cursor-pointer"
+              class="text-gray-200 hover:text-white"
             />
           </a>
         </div>
