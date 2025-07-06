@@ -6,16 +6,31 @@ import { portfolioItems } from '@/data/portfolio'
     <div
         v-for="item in portfolioItems"
         :key="item.name"
-        class="bg-white/8 flex rounded-2xl overflow-hidden mt-8"
+        class="
+            flex items-center
+            rounded-2xl
+            overflow-hidden
+            mt-8
+            bg-white/8
+        "
     >
-        <div class="w-60 h-80 pr-8">
+        <div class="
+            w-40 lg:w-60
+            h-60 lg:h-80
+            pr-4 lg:pr-8"
+        >
             <SliderPreviewImages
                 :images="item.images"
             />
         </div>
-        <div class="flex-1 min-w-0 py-8">
-            <div class="flex items-center font-extrabold text-2xl">
-                <span>{{ item.title }}</span>
+        <div class="flex-1 min-w-0 py-2 lg:py-8">
+            <div class="
+                font-extrabold
+                flex items-center
+                text-xl lg:text-2xl
+                pr-2"
+            >
+                <span class="truncate">{{ item.title }}</span>
                 <a
                     v-if="item.link != null"
                     :href="item.link"
@@ -29,10 +44,17 @@ import { portfolioItems } from '@/data/portfolio'
                     />
                 </a>
             </div>
-            <div class="mt-2">
+            <div class="
+                text-xs lg:text-sm xl:text-base
+                mt-2"
+            >
                 <span>{{ item.description }}</span>
             </div>
-            <div class="font-bold text-lg mt-6">
+            <div class="
+                font-bold
+                text-base lg:text-lg
+                mt-3 lg:mt-6"
+            >
                 <span>Стек:</span>
             </div>
             <SliderPortfolioStack
@@ -45,8 +67,15 @@ import { portfolioItems } from '@/data/portfolio'
                 title="Backend:"
                 :stackItems="item.stack.back"
             />
-            <div class="flex items-center mt-6">
-                <div class="font-bold mr-4">
+            <div class="
+                flex items-center
+                mt-3 lg:mt-6"
+            >
+                <div class="
+                    font-bold
+                    text-sm lg:text-base
+                    mr-2 lg:mr-4"
+                >
                     <span>Доступно в:</span>
                 </div>
                 <div class="flex gap-x-2">

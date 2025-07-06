@@ -1,5 +1,5 @@
 <template>
-    <UiGlassContainer class="sticky top-15 flex-1 min-w-60 mr-8 py-12">
+    <UiGlassContainer>
         <div class="w-[50%] mx-auto">
             <NuxtImg
                 class="w-full h-auto object-cover rounded-3xl"
@@ -7,11 +7,11 @@
                 src="/me.jpg"
             />
         </div>
-        <div class="font-extrabold text-center mt-6 text-3xl">
+        <div class="font-extrabold text-center mt-6 text-xl md:text-2xl lg:text-3xl">
             <span>Oleg Mikhailov</span>
         </div>
         <div class="flex justify-center mt-4">
-            <div class="bg-white/12 rounded-md font-bold py-1 px-4 text-sm">
+            <div class="bg-white/12 rounded-md font-bold py-1 px-4 text-xs md:text-sm">
                 <span>Full-stack <span class="text-sky-400">Web Developer</span></span>
             </div>
         </div>
