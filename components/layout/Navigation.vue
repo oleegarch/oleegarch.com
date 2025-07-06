@@ -1,5 +1,5 @@
 <template>
-    <div class="flex items-stretch text-xl md:text-2xl lg:text-4xl">
+    <div class="flex items-stretch text-base sm:text-lg md:text-2xl lg:text-4xl">
         <NuxtLink
             to="/"
             class="click-top-shift font-bold py-2 px-6 rounded-md cursor-pointer"

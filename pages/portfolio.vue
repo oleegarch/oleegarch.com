@@ -8,6 +8,7 @@ import { portfolioItems } from '@/data/portfolio'
         :key="item.name"
         class="
             flex items-center
+            max-md:flex-col
             rounded-2xl
             overflow-hidden
             mt-8
@@ -15,15 +16,23 @@ import { portfolioItems } from '@/data/portfolio'
         "
     >
         <div class="
-            w-40 lg:w-60
-            h-60 lg:h-80
-            pr-4 lg:pr-8"
+            w-60 md:w-40 lg:w-60
+            h-80 md:h-60 lg:h-80
+            max-md:mt-4
+            sm:pr-4 lg:pr-8"
         >
             <SliderPreviewImages
                 :images="item.images"
             />
         </div>
-        <div class="flex-1 min-w-0 py-2 lg:py-8">
+        <div
+            class="
+                flex-1
+                w-full min-w-0
+                max-md:px-6
+                pb-4 pt-2 lg:py-8
+            "
+        >
             <div class="
                 font-extrabold
                 flex items-center

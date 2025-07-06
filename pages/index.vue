@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { skills } from '@/data/skills'
-const skillsChunks = chunk(skills, 2)
 </script>
 
 <template>
@@ -14,15 +13,11 @@ const skillsChunks = chunk(skills, 2)
         <span>Стек</span>
     </div>
     <div class="bg-yellow-500 rounded-md h-2 w-12 mt-4"/>
-    <div
-        v-for="(skillsChunk, index) in skillsChunks"
-        :key="index"
-        class="flex justify-between items-center w-full mt-8 gap-x-8"
-    >
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mt-8 gap-4">
         <div
-            v-for="skill in skillsChunk"
-            :key="skill.title"
-            class="bg-white/12 rounded-xl flex-1 transition-flex duration-200 shrink-0 p-4"
+            v-for="(skill, index) in skills"
+            :key="index"
+            class="bg-white/12 rounded-xl p-4"
         >
             <div class="mb-2">
                 <UiProgressBar
