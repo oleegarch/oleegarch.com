@@ -50,27 +50,13 @@ import { portfolioItems } from '@/data/portfolio'
                     <span>Доступно в:</span>
                 </div>
                 <div class="flex gap-x-2">
-                    <a
+                    <UiSocialLink
                         v-for="link in item.links"
                         :key="link.url"
-                        class="inline-flex click-top-shift"
                         :href="link.url"
-                        target="_blank"
-                        rel="noopener"
-                    >
-                        <Icon
-                            v-if="link.icon != null"
-                            :name="link.icon"
-                            size="36"
-                            class="text-gray-200 hover:text-white"
-                        />
-                        <NuxtImg
-                            v-else-if="link.image != null"
-                            :src="link.image"
-                            width="36"
-                            height="36"
-                        />
-                    </a>
+                        :icon="link.icon"
+                        :image="link.image"
+                    />
                 </div>
             </div>
         </div>
