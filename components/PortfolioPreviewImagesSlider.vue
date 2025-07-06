@@ -8,7 +8,7 @@ defineProps<{
 	<ClientOnly>
 		<swiper-container
 			class="swiper-portfolio-preview-images-slider size-full"
-			:navigation="true"
+			:navigation="{ enabled: true }"
 			:pagination="{ dynamicBullets: true }"
 		>
 			<swiper-slide
