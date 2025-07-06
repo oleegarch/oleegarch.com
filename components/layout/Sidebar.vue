@@ -7,11 +7,11 @@
                 src="/me.jpg"
             />
         </div>
-        <div class="font-extrabold text-center mt-6 text-xl md:text-2xl lg:text-3xl">
+        <div class="font-extrabold text-center mt-6 text-3xl sm:text-xl md:text-2xl lg:text-3xl">
             <span>Oleg Mikhailov</span>
         </div>
         <div class="flex justify-center mt-4">
-            <div class="bg-white/12 rounded-md font-bold py-1 px-4 text-xs md:text-sm">
+            <div class="bg-white/12 rounded-md font-bold py-1 px-4 text-lg sm:text-xs md:text-sm">
                 <span>Full-stack <span class="text-sky-400">Web Developer</span></span>
             </div>
         </div>

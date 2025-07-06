@@ -1,5 +1,19 @@
 @import "tailwindcss";
 
+/* @theme {
+	--text-tiny: 0.625rem;
+} */
+@custom-variant 2xs {
+	@media (max-width: 32rem) {
+		@slot;
+	}
+}
+@custom-variant 3xs {
+	@media (max-width: 24rem) {
+		@slot;
+	}
+}
+
 body {
     background-color: #222222;
     color: #ffffff;
