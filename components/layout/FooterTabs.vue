@@ -1,7 +1,17 @@
 <script setup lang="ts">
 const tabs = [
-    { to: '/', label: 'Обо мне', icon: 'mdi:account-badge-outline' },
-    { to: '/portfolio', label: 'Портфолио', icon: 'mdi:briefcase-account-outline' }
+    {
+        name: 'index',
+        to: '/',
+        label: 'Обо мне',
+        icon: 'mdi:account-badge-outline'
+    },
+    {
+        name: 'portfolio',
+        to: '/portfolio',
+        label: 'Портфолио',
+        icon: 'mdi:briefcase-account-outline'
+    }
 ]
 </script>
 
@@ -16,13 +26,13 @@ const tabs = [
     >
         <NuxtLink
             v-for="tab in tabs"
-            :key="tab.to"
+            :key="tab.name"
             :to="tab.to"
             class="
                 flex flex-col items-center justify-center
                 text-xs transition text-gray-300 hover:text-gray-200
             "
-            :class="{ 'text-yellow-500 font-semibold': $route.path === tab.to }"
+            :class="{ 'text-yellow-500 font-semibold': $route.name === tab.name }"
         >
             <Icon
                 :name="tab.icon"
