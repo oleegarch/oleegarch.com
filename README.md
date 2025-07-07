@@ -1,6 +1,6 @@
 # My Personal Portfolio
 
-Demo: [Nuxt documentation](https://oleegarch.com).
+Demo: [https://oleegarch.com](https://oleegarch.com).
 
 ## Setup
 
