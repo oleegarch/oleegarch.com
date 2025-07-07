@@ -72,6 +72,44 @@ export const portfolioItems: PortfolioItem[] = [
 		}
     },
     {
+        name: 'slaves',
+        title: 'Рабство',
+		description:
+			'Реферальная игра, где игрок, перешедший по твоей ссылке, становится твоим рабом, на котором ты впоследствии зарабатываешь монеты.',
+        images: [
+            '/portfolio/slaves/referral.png',
+            '/portfolio/slaves/toplist.png'
+        ],
+		links: [
+			{
+				url: 'https://t.me/slaverygame_bot',
+				icon: 'uil:telegram',
+			},
+		],
+		stack: {
+			front: [
+				{ label: 'vue3' },
+				{ label: 'pinia' },
+				{ label: 'vue-router' },
+				{ label: 'gsap', hint: 'Для анимаций' },
+				{ label: 'tsparticles', hint: 'Используется для конфетти' },
+				{ label: 'hammerjs', hint: 'Модуль для удобного использования сенсорных жестов' },
+				{
+					label: 'Своя UI библиотека',
+					hint: 'Реализована своя UI библиотека подходящая под игровой стиль',
+				},
+			],
+			back: [
+				{ label: 'node.js' },
+				{ label: 'MongoDB' },
+				{ label: 'Redis' },
+				{ label: 'mongoose', hint: 'Модуль для работы с MongoDB' },
+				{ label: 'express', hint: 'Модуль для API' },
+				{ label: 'socket.io', hint: 'Для связи в реальном времени' },
+			],
+		}
+    },
+    {
         name: 'smarter',
         title: 'Smarter',
 		description:
