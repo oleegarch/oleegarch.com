@@ -20,6 +20,7 @@
                 class="
                     flex-1 min-w-0
                     sm:p-4 lg:p-8 mt-8 sm:mt-0
+                    max-sm:mb-24 max-sm:pb-8
                 "
             >
                 <LayoutNavigation />
@@ -27,5 +28,8 @@
                 <NuxtPage />
             </UiGlassContainer>
         </main>
+        <LayoutFooterTabs
+            class="sm:hidden"
+        />
     </NuxtLayout>
 </template>

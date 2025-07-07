@@ -18,7 +18,7 @@ import { portfolioItems } from '@/data/portfolio'
         >
             <div class="
                 w-60 md:w-40 lg:w-60
-                h-80 md:h-60 lg:h-80
+                h-120 md:h-60 lg:h-80
                 max-md:mt-4
                 sm:pr-4 lg:pr-8"
             >
