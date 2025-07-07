@@ -1,2 +1,1 @@
-add slavery project to portfolio
 test on live mobile device

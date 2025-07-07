@@ -1,5 +1,11 @@
 <script setup lang="ts">
-const tabs = [
+type RouteTab = {
+    name: string
+    to: string
+    label: string
+    icon: string
+}
+const tabs: RouteTab[] = [
     {
         name: 'index',
         to: '/',
@@ -21,8 +27,8 @@ const tabs = [
         fixed bottom-0 left-0 right-0
         flex justify-around items-center
         bg-black/50
-        border-1 border-solid border-gray-600
-        backdrop-blur-lg backdrop-saturate-180
+        border-t-1 border-solid border-gray-600
+        backdrop-blur-md backdrop-saturate-180
         h-16 z-50
         safe-bottom"
     >

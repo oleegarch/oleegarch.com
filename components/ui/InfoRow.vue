@@ -27,8 +27,16 @@ function copy(label : string) {
 </script>
 
 <template>
-    <div class="flex items-center mx-auto max-w-[85%]">
-        <div class="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 bg-white/12 rounded-xl">
+    <div class="
+        flex items-center
+        mx-auto max-w-[85%]
+    ">
+        <div class="
+            inline-flex items-center justify-center flex-shrink-0
+            w-12 h-12
+            bg-white/12
+            rounded-xl
+        ">
             <Icon
                 :name="icon"
                 size="24"
