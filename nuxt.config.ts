@@ -16,7 +16,7 @@ export default defineNuxtConfig({
       meta: [
         {
           name: 'description',
-          content: "Oleg Mikhailov's Personal Portfolio"
+          content: "Oleg Mikhailov's Personal Portfolio: about, projects, contacts"
         },
         {
           name: 'theme-color',
@@ -27,7 +27,7 @@ export default defineNuxtConfig({
           content: 'width=device-width, initial-scale=1.0, viewport-fit=cover'
         },
         { property: 'og:title', content: 'Oleg Mikhailov' },
-        { property: 'og:description', content: 'Проекты, опыт и контакты' },
+        { property: 'og:description', content: 'Personal Portfolio: about, projects, contacts' },
         { property: 'og:image', content: '/images/me.jpg' }
       ]
     }
