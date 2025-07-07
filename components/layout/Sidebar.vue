@@ -4,7 +4,7 @@
             <NuxtImg
                 class="w-full h-auto object-cover rounded-3xl"
                 alt="Моё фото"
-                src="/me.jpg"
+                src="/images/me.jpg"
             />
         </div>
         <div class="font-extrabold text-center mt-6 text-3xl sm:text-xl md:text-2xl lg:text-3xl">
