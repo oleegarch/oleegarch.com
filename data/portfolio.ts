@@ -30,7 +30,7 @@ export const portfolioItems: PortfolioItem[] = [
         images: [
             '/images/portfolio/bytecoin4/clawmachine.png',
             '/images/portfolio/bytecoin4/crash.png',
-            '/images/portfolio/bytecoin4/dailyBonus.png',
+            '/images/portfolio/bytecoin4/dailybonus.png',
             '/images/portfolio/bytecoin4/tasks.png'
         ],
 		links: [
