@@ -22,9 +22,23 @@ defineProps<{
 </template>
 
 <style lang="css">
-.swiper-portfolio-preview-images-slider {
+swiper-container.swiper-portfolio-preview-images-slider {
     --swiper-theme-color: var(--color-white);
     --swiper-pagination-bullet-inactive-color: var(--color-white);
     --swiper-pagination-bullet-inactive-opacity: 0.75;
+}
+swiper-container.swiper-portfolio-preview-images-slider::part(button-prev),
+swiper-container.swiper-portfolio-preview-images-slider::part(button-next) {
+  background-color: black;
+  padding: 5px;
+  border-radius: 10px;
+}
+swiper-container.swiper-portfolio-preview-images-slider::part(pagination) {
+  background-color: black;
+  padding: 2px 4px;
+  border-radius: 5px;
+}
+swiper-container.swiper-portfolio-preview-images-slider::part(bullet-active) {
+  background-color: red;
 }
 </style>
