@@ -40,6 +40,7 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxt/icon',
     '@nuxt/image',
+    '@vueuse/nuxt',
     'nuxt-particles',
     'nuxt-swiper'
   ],

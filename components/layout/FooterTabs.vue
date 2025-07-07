@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const router = useRouter()
+
 type RouteTab = {
     name: string
     to: string

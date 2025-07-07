@@ -11,6 +11,8 @@ const wasCopiedNow = ref(false)
 let timeoutId: ReturnType<typeof setTimeout> | null = null
 
 function copy(label : string) {
+    if(!import.meta.client) return;
+
     copyText(label)
 
     wasCopiedNow.value = true
