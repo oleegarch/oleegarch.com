@@ -1,6 +1,6 @@
 # My Personal Portfolio
 
-Demo: [https://oleegarch.com](https://oleegarch.com).
+Demo: [https://oleegarch.com](https://oleegarch.com)
 
 ## Setup
 
