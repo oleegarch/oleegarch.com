@@ -17,12 +17,14 @@ const tabs = [
 
 <template>
     <nav class="
+        FooterTabs
         fixed bottom-0 left-0 right-0
         flex justify-around items-center
         bg-black/50
         border-1 border-solid border-gray-600
         backdrop-blur-lg backdrop-saturate-180
-        h-16 z-50"
+        h-16 z-50
+        safe-bottom"
     >
         <NuxtLink
             v-for="tab in tabs"
@@ -42,3 +44,9 @@ const tabs = [
         </NuxtLink>
     </nav>
 </template>
+
+<style>
+.FooterTabs.h-16 {
+    height: calc(var(--spacing) * 16 + var(--vueuse-safe-area-bottom, 0px));
+}
+</style>
