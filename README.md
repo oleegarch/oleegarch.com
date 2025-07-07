@@ -1,6 +1,6 @@
-# Nuxt Minimal Starter
+# My Personal Portfolio
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Demo: [Nuxt documentation](https://oleegarch.com).
 
 ## Setup
 
